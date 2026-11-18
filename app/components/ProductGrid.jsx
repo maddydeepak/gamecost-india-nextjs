@@ -1,27 +1,29 @@
+import Image from "next/image";
+
 const products = [
   {
     heading: "Consoles",
     items: [
       [
-        "🎮",
+        "/images/PS5.png",
         "PlayStation",
         "PlayStation 5 Disc Edition",
         "Play GTA 6 on PS5. A great option if you want physical-game support too.",
-        "PlayStation 5 Disc Edition console",
+        "https://link.amazon/B0eGv1HFQ",
       ],
       [
-        "🕹️",
-        "Xbox · Budget pick",
+        "/images/xboxS.png",
+        "Xbox",
         "Xbox Series S",
-        "The more affordable, all-digital way to play on the current Xbox generation.",
-        "Xbox Series S console",
+        "All-digital way to play on the current Xbox generation.",
+        "https://link.amazon/B0fDmuCUP",
       ],
       [
-        "🎮",
+        "/images/xboxX.png",
         "Xbox",
         "Xbox Series X",
         "A more powerful Xbox option with a disc drive for supported physical games.",
-        "Xbox Series X console",
+        "https://link.amazon/B04ac0Wwz",
       ],
     ],
   },
@@ -29,25 +31,25 @@ const products = [
     heading: "Controllers and audio",
     items: [
       [
-        "🎮",
+        "/images/DualSenseWirelessControl.png",
         "PlayStation accessory",
         "DualSense Wireless Controller",
         "A spare controller for local multiplayer or a replacement for your current one.",
-        "PS5 DualSense wireless controller",
+        "https://link.amazon/B07YhauYX",
       ],
       [
-        "🕹️",
+        "/images/XboxWirelessControl.png",
         "Xbox accessory",
         "Xbox Wireless Controller",
         "A comfortable second controller for Xbox Series X|S gaming.",
-        "Xbox wireless controller",
+        "https://link.amazon/B00o9KBXB",
       ],
       [
-        "🎧",
+        "/images/gamingheadset.png",
         "Audio",
         "Gaming Headset",
         "Hear in-game audio clearly and chat with friends while playing online.",
-        "gaming headset PS5 Xbox",
+        "https://link.amazon/B0imABbQa",
       ],
     ],
   },
@@ -55,25 +57,25 @@ const products = [
     heading: "Screen and storage",
     items: [
       [
-        "📺",
+        "/images/gamingtv.png",
         "Big-screen gaming",
-        "4K TV with HDMI 2.1",
+        "4K Ultra HD TV with HDMI 2.1",
         "Look for HDMI 2.1 and 120 Hz support when comparing compatible TVs.",
-        "4K TV HDMI 2.1 120Hz",
+        "https://link.amazon/B00ix65Ex",
       ],
       [
-        "🖥️",
+        "/images/gamingmonitor.png",
         "Desk setup",
         "Gaming Monitor with HDMI 2.1",
         "A desk-friendly screen option. Check resolution, refresh rate and console compatibility.",
-        "4K gaming monitor HDMI 2.1",
+        "https://link.amazon/B0bz4VRju",
       ],
       [
-        "💾",
+        "/images/extdrive.png",
         "Storage",
         "External SSD for Console",
         "Add storage for your game library. Check the supported drive type and compatibility first.",
-        "external SSD for PS5 Xbox",
+        "https://link.amazon/B085OI1O2",
       ],
     ],
   },
@@ -81,11 +83,11 @@ const products = [
     heading: "For recording and streaming",
     items: [
       [
-        "📹",
+        "/images/recording.png",
         "Creator gear",
         "HDMI Capture Card",
         "Capture console gameplay on a laptop for recording, streaming and creating videos.",
-        "HDMI capture card 4K",
+        "https://link.amazon/B0gvQkf5S",
       ],
     ],
   },
@@ -109,7 +111,7 @@ export default function ProductGrid() {
             {group.items.map(([icon, tag, name, description, query]) => (
               <article className="product-card" key={name}>
                 <div className="product-art" aria-hidden="true">
-                  {icon}
+                  <Image src={icon} alt={tag} width={300} height={300} />
                 </div>
                 <div className="product-info">
                   <span className="product-tag">{tag}</span>
@@ -121,7 +123,7 @@ export default function ProductGrid() {
                   </div>
                   <a
                     className="buy"
-                    href={amazonSearchUrl(query)}
+                    href={query}
                     target="_blank"
                     rel="sponsored nofollow noopener noreferrer"
                     aria-label={`Search Amazon India for ${query}`}
