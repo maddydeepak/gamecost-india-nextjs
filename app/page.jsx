@@ -133,12 +133,6 @@ export default function HomePage() {
 
         <section id="gear">
           <h2>Gear you’ll need</h2>
-          <p className="disc">
-            As an Amazon Associate I earn from qualifying purchases. Some links
-            below are affiliate links. If you buy through them, this site may
-            earn a commission at no extra cost to you. Prices change often;
-            check Amazon for current details.
-          </p>
           <ProductGrid />
         </section>
 
@@ -180,6 +174,13 @@ export default function HomePage() {
 
       <footer>
         <div className="wrap">
+          <h2>Disclaimer:</h2>
+          <p className="disc">
+            As an Amazon Associate I earn from qualifying purchases. Some links
+            below are affiliate links. If you buy through them, this site may
+            earn a commission at no extra cost to you. Prices change often;
+            check Amazon for current details.
+          </p>
           <p>
             This is an unofficial fan guide. Game names and trademarks belong to
             their owners. Figures were last checked on 18 November 2026 from

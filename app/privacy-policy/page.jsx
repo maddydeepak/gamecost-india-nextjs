@@ -16,7 +16,9 @@ export default function PrivacyPolicyPage() {
       <h2>Third-party websites</h2>
       <p>We are not responsible for the privacy practices or content of external websites. Please review their policies before sharing personal information.</p>
       <h2>Contact</h2>
-      <p>Replace this paragraph with your public contact email or contact method.</p>
+      <p><a href="https://www.linkedin.com/in/maddydeepak/" target="_blank">
+            Linkedin
+          </a></p>
       <a href="/">Back to home</a>
     </main>
   );
