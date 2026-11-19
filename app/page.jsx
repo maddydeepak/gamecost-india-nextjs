@@ -176,10 +176,10 @@ export default function HomePage() {
         <div className="wrap">
           <h2>Disclaimer:</h2>
           <p className="disc">
-            As an Amazon Associate I earn from qualifying purchases. Some links
-            below are affiliate links. If you buy through them, this site may
-            earn a commission at no extra cost to you. Prices change often;
-            check Amazon for current details.
+            As an Amazon Associate I earn from qualifying purchases. All the
+            links above are affiliate links. If you buy through them, this site
+            may earn a commission at no extra cost to you. Prices change often,
+            so please check Amazon for current details.
           </p>
           <p>
             This is an unofficial fan guide. Game names and trademarks belong to
