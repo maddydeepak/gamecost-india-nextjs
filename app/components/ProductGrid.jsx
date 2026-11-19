@@ -117,10 +117,10 @@ export default function ProductGrid() {
                   <span className="product-tag">{tag}</span>
                   <h4>{name}</h4>
                   <p>{description}</p>
-                  <div className="product-price">
+                  {/* <div className="product-price">
                     Check latest price
                     <small>Price may vary by seller</small>
-                  </div>
+                  </div> */}
                   <a
                     className="buy"
                     href={query}
@@ -136,7 +136,7 @@ export default function ProductGrid() {
                     //   }
                     // }}
                   >
-                    View Deal
+                    Check Price on Amazon
                   </a>
                 </div>
               </article>
